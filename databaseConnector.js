@@ -37,7 +37,7 @@ module.exports.get = () => {
                 // throw err;
                 reject(err);
             } else {
-                console.log("Database created and connected!");
+                console.log(new Date().getTime() + " Database created and connected!");
                 // return connection.db("privacy_policy");
                 resolve(connection.db("privacy_policy"));
             }
